@@ -2,7 +2,14 @@
 
 set -e #Halts the program if error occurs (i.e., not getting sudo permission)
 
-pkexec efibootmgr -n 0000
+WINDOWS_BOOT_NUMBER = efibootmgr | \ # Get list of boot options.
+grep -i Windows | \ 		     # Search for line containing 'Windows' in
+				     # these options (case insensitive).
+grep -Eo "Boot(.*?\*)" | \ 	     # Get 'Boot____*' value of this line.
+grep -Eo "[0-9]{4}" 		     # Extract the 4-digit number from this
+				     # value.
+
+pkexec efibootmgr -n $WINDOWS_BOOT_NUMBER
 
 case $DESKTOP_SESSION in
 	"gnome")
