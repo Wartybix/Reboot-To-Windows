@@ -21,7 +21,6 @@ fi
 pkexec efibootmgr -n $WINDOWS_BOOT_NUMBER # Set next boot to Windows boot,
 										  # with sudo permisions taken from GUI.
 
-
 case $DESKTOP_SESSION in
 	gnome) # If user running GNOME:
 		gnome-session-quit --reboot ;; # Show gnome reboot prompt
