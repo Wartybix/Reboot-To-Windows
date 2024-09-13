@@ -3,6 +3,8 @@ This program allows the user to quickly reboot to Windows from Linux, without ne
 This is useful if you are an impatient person with a slow-booting PC, as you can open the 'Windows' application from your desktop, do something else, and in a short while the Windows login screen will be displayed.
 This is in contrast to a regular reboot which requires the user to select 'Windows Boot Manager' from the boot screen after rebooting, requiring supervision of the computer so that Linux doesn't automatically boot again after a timeout.
 
+This program only works on UEFI systems.
+
 ## How to use
 1. Clone this repository:
 ```
