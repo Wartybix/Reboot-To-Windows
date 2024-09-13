@@ -14,9 +14,10 @@ WINDOWS_BOOT_NUMBER=efibootmgr | grep -i Windows | grep -Eo "Boot(.*?\*)" | grep
 pkexec efibootmgr -n $WINDOWS_BOOT_NUMBER
 
 case $DESKTOP_SESSION in
-	"gnome")
-		gnome-session-quit --reboot
-	"kde")
-		qdbus org.kde.ksmserver /KSMServer logout 1 1 1
+	gnome)
+		gnome-session-quit --reboot ;;
+	kde)
+		qdbus org.kde.ksmserver /KSMServer logout 1 1 1 ;;
 	*)
-		reboot
+		reboot ;;
+esac
