@@ -31,3 +31,4 @@ If you want to remove this program, run the uninstaller in the repository folder
 
 # Attributions
 Thank you to Wikimedia Commons for hosting [the file for the Windows logo](https://en.m.wikipedia.org/wiki/File:Windows_logo_-_2021.svg), which is used as the icon for this program's `.desktop` file.
+
