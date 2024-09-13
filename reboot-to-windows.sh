@@ -17,7 +17,7 @@ case $DESKTOP_SESSION in
 	gnome)
 		gnome-session-quit --reboot ;;
 	plasma)
-		qdbus org.kde.ksmserver /KSMServer logout 1 1 1 ;;
+		qdbus org.kde.LogoutPrompt /LogoutPrompt promptReboot ;;
 	*)
 		reboot ;;
 esac
