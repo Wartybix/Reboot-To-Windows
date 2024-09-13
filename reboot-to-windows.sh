@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#TODO: Add functionality to dynamically detect the bootnum of the Windows partition.
-
 set -e #Halts the program if error occurs (i.e., not getting sudo permission)
 
 # Gets list of boot options.
@@ -9,7 +7,14 @@ set -e #Halts the program if error occurs (i.e., not getting sudo permission)
 # insensitive).
 # Gets the 'Boot____*' value of this line.
 # Extracts the 4-digit number from this value.
-WINDOWS_BOOT_NUMBER=efibootmgr | grep -i Windows | grep -Eo "Boot(.*?\*)" | grep -Eo "[0-9]{4}"
+# If unsuccessful, the variable is set to -1.
+WINDOWS_BOOT_NUMBER=efibootmgr | grep -i Windows | grep -Eo "Boot(.*?\*)" | grep -Eo "[0-9]{4}" || echo -1
+
+if [ $WINDOWS_BOOT_NUMBER==-1 ]; then
+	notify-send -a Windows "Reboot Unsuccessful" \
+	"The Windows boot option was not found on the system."
+	exit 1
+fi
 
 pkexec efibootmgr -n $WINDOWS_BOOT_NUMBER
 
