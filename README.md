@@ -10,6 +10,7 @@ This program only works on UEFI systems.
 ```
 git clone https://github.com/Wartybix/Reboot-To-Windows
 ```
+Alternatively, you can download from the [releases section](https://github.com/Wartybix/Reboot-To-Windows/releases).
 
 2. Navigate to the new repository:
 ```
