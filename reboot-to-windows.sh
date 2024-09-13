@@ -16,7 +16,7 @@ pkexec efibootmgr -n $WINDOWS_BOOT_NUMBER
 case $DESKTOP_SESSION in
 	gnome)
 		gnome-session-quit --reboot ;;
-	kde)
+	plasma)
 		qdbus org.kde.ksmserver /KSMServer logout 1 1 1 ;;
 	*)
 		reboot ;;
