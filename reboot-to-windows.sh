@@ -12,14 +12,14 @@ WINDOWS_BOOT_NUMBER=`efibootmgr | grep -i Windows | grep -Eo "Boot(.*?\*)" | gre
 
 if [ "$WINDOWS_BOOT_NUMBER" = "-1" ]; then #If Windows was not found:
 	# Display notification.
-    notify-send -a Windows "Reboot Unsuccessful" \
+	notify-send -a Windows "Reboot Unsuccessful" \
 	"The Windows boot option was not found on the system."
 
 	exit 1 # Exit the program with code 1.
 fi
 
 pkexec efibootmgr -n $WINDOWS_BOOT_NUMBER # Set next boot to Windows boot,
-										  # with sudo permisions taken from GUI.
+# with sudo permisions taken from GUI.
 
 case $DESKTOP_SESSION in
 	gnome) # If user running GNOME:
