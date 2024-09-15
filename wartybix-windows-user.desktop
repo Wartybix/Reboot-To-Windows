@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Windows
+Comment=Reboot to Windows
+Exec=bash reboot-to-windows.sh
+Icon=windows_logo.png
+Type=Application
+Terminal=false
