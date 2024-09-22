@@ -4,6 +4,7 @@ This is useful if you are an impatient person with a slow-booting PC, as you can
 This is in contrast to a regular reboot which requires the user to select 'Windows Boot Manager' from the boot screen after rebooting, requiring supervision of the computer so that Linux doesn't automatically boot again after a timeout.
 
 This program only works on UEFI systems.
+Does not require use of GRUB, and can be used with systemd-boot too.
 
 ## How to use
 1. Clone this repository:
