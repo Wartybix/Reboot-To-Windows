@@ -25,8 +25,15 @@ case $DESKTOP_SESSION in
 	gnome) # If user running GNOME:
 		gnome-session-quit --reboot ;; # Show gnome reboot prompt
 	plasma) # If user running KDE Plasma:
-		# Show KDE Plasma reboot prompt
-		qdbus org.kde.LogoutPrompt /LogoutPrompt promptReboot ;;
+		# Check for 'qdbus' command. If empty, set to -1.
+		QDBUS=`which qdbus 2>/dev/null || echo -1`
+		if [ "$QDBUS" = "-1" ]; then # If qdbus command not found:
+			reboot # Generic reboot
+		else
+			# Show KDE Plasma reboot prompt
+			qdbus org.kde.LogoutPrompt /LogoutPrompt promptReboot
+		fi
+		;;
 	*) # If running another desktop environment:
 		reboot ;; # Generic Linux reboot command
 esac
