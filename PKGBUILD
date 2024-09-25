@@ -1,6 +1,6 @@
 # Maintainer: Wartybix <34974060+Wartybix@users.noreply.github.com>
 pkgname='reboot-to-windows'
-pkgver=1.2
+pkgver=1.1
 pkgrel=1
 pkgdesc="Application to quickly reboot to Windows from Linux, bypassing the boot menu."
 arch=('x86_64')
