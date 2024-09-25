@@ -17,23 +17,15 @@ pkgver() {
 	git describe --long --tags --abbrev=7 | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
 }
 
-prepare() {
-	cd "$pkgname-$pkgver"
-	patch -p1 -i "$srcdir/$pkgname-$pkgver.patch"
-}
-
 build() {
 	cd "$pkgname-$pkgver"
-	./configure --prefix=/usr
 	make
-}
-
-check() {
-	cd "$pkgname-$pkgver"
-	make -k check
 }
 
 package() {
 	cd "$pkgname-$pkgver"
-	make DESTDIR="$pkgdir/" install
+	install -Dm755 reboot-to-windows.sh "$pkgdir/usr/bin/reboot-to-windows"
+	install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname"
+	install -Dm644 wartybix-windows-root.desktop "$pkgdir/usr/share/applications/$pkgname.desktop"
+	install -Dm644 windows_logo.png "$pkgdir/usr/share/$pkgname/windows_logo.png"
 }
