@@ -15,7 +15,7 @@ sha256sums=('e94ff36028585ac504fa20c6bfd35e78ba3721bc2b050b156fd26ba8f4439c95')
 
 package() {
 	cd "$_pkgname-$pkgver"
-	install -Dm755 reboot-to-windows.sh "$pkgdir/usr/bin/reboot-to-windows.sh"
+	install -Dm755 reboot-to-windows.sh "$pkgdir/usr/bin/reboot-to-windows"
 	install -Dm644 README.md "$pkgdir/usr/share/doc/$pkgname"
 	install -Dm644 wartybix-windows-root.desktop "$pkgdir/usr/share/applications/$pkgname.desktop"
 	install -Dm644 windows_logo.png "$pkgdir/usr/share/$pkgname/windows_logo.png"
