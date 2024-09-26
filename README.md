@@ -7,6 +7,10 @@ This program only works on UEFI systems.
 Does not require use of GRUB, and can be used with systemd-boot too.
 
 ## How to use
+### Package Managers
+Arch Linux users can now install this program via [the AUR](https://aur.archlinux.org/packages/reboot-to-windows) 😊.
+
+### Manual Install
 1. Clone this repository:
 ```
 git clone https://github.com/Wartybix/Reboot-To-Windows
@@ -24,7 +28,7 @@ cd Reboot-To-Windows/
 
 The 'Windows' app should now be available in your desktop environment.
 
-### Uninstall
+#### Uninstall
 If you want to remove this program, run the uninstaller in the repository folder.
 To uninstall a local installation, run `uninstall_from_user.sh`.
 To uninstall the program for all users, run `uninstall_from_root.sh`.
