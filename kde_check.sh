@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ "$DESKTOP_SESSION" = "plasma" ]; then # If user running KDE Plasma:
 	# Check for 'qdbus' command. If empty, set to -1.

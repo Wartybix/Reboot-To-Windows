@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 rm ~/.local/share/icons/windows_logo.png # Supporting files
 rm ~/.local/bin/reboot-to-windows.sh # Executable

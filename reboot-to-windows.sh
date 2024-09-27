@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e # Halts the program if error occurs (i.e., not getting sudo permission)
 

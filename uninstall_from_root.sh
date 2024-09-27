@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 sudo rm /usr/share/pixmaps/windows_logo.png # Icon
 sudo rm /usr/bin/reboot-to-windows # Executable
