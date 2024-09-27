@@ -2,6 +2,6 @@
 Name=Windows
 Comment=Reboot to Windows
 Exec=bash -c "$HOME/.local/bin/reboot-to-windows.sh"
-Icon=windows_logo.png
+Icon=windows_logo
 Type=Application
 Terminal=false
