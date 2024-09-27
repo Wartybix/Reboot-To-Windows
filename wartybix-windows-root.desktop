@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Windows
 Comment=Reboot to Windows
-Exec=/bin/bash /usr/bin/reboot-to-windows
-Icon=/usr/share/reboot-to-windows/windows_logo.png
+Exec=reboot-to-windows
+Icon=windows_logo
 Type=Application
 Terminal=false
