@@ -40,5 +40,5 @@ This is because I may sometimes change where the app's files are located on the 
 This issue is not present when using the Pacman package of this script.
 
 # Attributions
-Thank you to Wikimedia Commons for hosting [the file for the Windows logo](https://en.m.wikipedia.org/wiki/File:Windows_logo_-_2021.svg), which is used as the icon for this program's `.desktop` file.
+Thank you to Wikimedia Commons for hosting [the file for the Windows logo](https://en.m.wikipedia.org/wiki/File:Windows_logo_-_2021.svg), which is used as a layer of the icon for this program's `.desktop` file.
 
