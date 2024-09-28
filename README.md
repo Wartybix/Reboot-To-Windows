@@ -24,19 +24,19 @@ cd Reboot-To-Windows/
 
 3. Inspect the source code as usual before running random scripts from the internet.
 
-3. Once happy, run the installer. To install the program locally, run `install_user.sh`. To install the program for all users, run `install_root.sh` (requires root permissions).
+3. Once happy, run the installer. To install the program locally, run `./install.sh`. To install the program for all users, run `sudo ./install.sh` (requires root permissions).
 
 The 'Windows' app should now be available in your desktop environment.
 
 #### Uninstall
 If you want to remove this program, run the uninstaller in the repository folder.
-To uninstall a local installation, run `uninstall_from_user.sh`.
-To uninstall the program for all users, run `uninstall_from_root.sh`.
+To uninstall a local installation, run `./uninstall.sh`.
+To uninstall the program for all users, run `sudo ./uninstall.sh`.
 
 #### Updating
-When updating via a manual install, make sure to run the uninstaller (i.e., `uninstall_from_user.sh` or `uninstall_from_root.sh`) of the current version *before* pulling new changes or installing a new release.
+When updating via a manual install, make sure to run the uninstaller (i.e., `uninstall.sh`) of the current version *before* pulling new changes or installing a new release.
 
-This is because I may sometimes change where the app's files are located on the system when installed, and the uninstallers -- as well as the installers -- reflect these changes.
+This is because I may sometimes change where the app's files are located on the system when installed, and the uninstaller -- as well as the installer -- reflect these changes.
 This issue is not present when using the Pacman package of this script.
 
 # Attributions
