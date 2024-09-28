@@ -2,6 +2,6 @@
 Name=Windows
 Comment=Reboot to Windows
 Exec=reboot-to-windows
-Icon=windows_logo
+Icon=reboot-to-windows
 Type=Application
 Terminal=false
