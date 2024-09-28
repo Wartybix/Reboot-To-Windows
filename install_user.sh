@@ -1,7 +1,7 @@
 #!/bin/sh
 
 mkdir -p ~/.local/share/icons/
-cp windows_logo.png ~/.local/share/icons/ # Icon
+cp icons/reboot-to-windows.svg ~/.local/share/icons/ # Icon
 mkdir -p ~/.local/bin/
 cp reboot-to-windows.sh ~/.local/bin/ # Executable
 mkdir -p ~/.local/share/applications/
