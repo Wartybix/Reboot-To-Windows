@@ -617,10 +617,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="4.6182207"
-     inkscape:cx="67.450219"
-     inkscape:cy="89.320113"
+     inkscape:cx="117.25295"
+     inkscape:cy="38.867783"
      inkscape:current-layer="layer9"
-     showgrid="false"
+     showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
@@ -657,17 +657,6 @@
      inkscape:snap-text-baseline="true"
      borderlayer="true"
      inkscape:deskcolor="#d1d1d1">
-    <inkscape:grid
-       type="xygrid"
-       id="grid5883"
-       spacingx="2"
-       spacingy="2"
-       enabled="true"
-       visible="false"
-       empspacing="4"
-       originx="8"
-       originy="8"
-       units="px" />
     <sodipodi:guide
        position="72,16"
        orientation="0,1"
@@ -724,21 +713,6 @@
        inkscape:locked="false"
        inkscape:label=""
        inkscape:color="rgb(0,0,255)" />
-    <inkscape:grid
-       type="xygrid"
-       id="grid873"
-       spacingx="1"
-       spacingy="1"
-       empspacing="8"
-       color="#000000"
-       opacity="0.49019608"
-       empcolor="#000000"
-       empopacity="0.08627451"
-       dotted="true"
-       originx="8"
-       originy="8"
-       units="px"
-       visible="false" />
     <sodipodi:guide
        position="32,72"
        orientation="1,0"
@@ -2874,15 +2848,40 @@
          id="path1"
          style="display:inline;fill:#1c71d8;stroke-width:0.0213336;enable-background:new"
          clip-path="url(#clipPath5)"
-         transform="matrix(1.0096239,0,0,1.0096239,-0.6159535,-2.270602)" />
-      <path
-         fill="#0078d4"
-         d="m 12.495252,184.49524 h 48.831811 v 48.81068 H 12.495252 Z m 54.177751,0 h 48.831787 v 48.81068 H 66.673003 Z m -54.177751,54.17775 h 48.831811 v 48.83182 H 12.495252 Z m 54.177751,0 h 48.831787 v 48.83182 H 66.673003"
-         id="path1-3"
-         style="display:inline;fill:#1c71d8;stroke-width:0.0211302;enable-background:new"
-         clip-path="url(#clipPath1-7)"
-         transform="matrix(0.15532541,0,0,0.15532541,158.05917,143.3432)"
-         inkscape:label="path1-3" />
+         transform="matrix(1.0096239,0,0,1.0096239,-0.6159535,-2.270602)"
+         inkscape:label="hicolor" />
+      <g
+         id="g1"
+         inkscape:label="symbolic">
+        <rect
+           style="fill:#1c71d8;stroke:none"
+           id="rect6"
+           width="6"
+           height="6"
+           x="161"
+           y="173" />
+        <rect
+           style="display:inline;enable-background:new;fill:#1c71d8;stroke:none"
+           id="rect7"
+           width="6"
+           height="6"
+           x="161"
+           y="181" />
+        <rect
+           style="display:inline;enable-background:new;fill:#1c71d8;stroke:none"
+           id="rect8"
+           width="6"
+           height="6"
+           x="169"
+           y="181" />
+        <rect
+           style="display:inline;enable-background:new;fill:#1c71d8;stroke:none"
+           id="rect9"
+           width="6"
+           height="6"
+           x="169"
+           y="173" />
+      </g>
     </g>
     <g
        inkscape:groupmode="layer"
